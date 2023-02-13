@@ -1,18 +1,14 @@
-import { useState } from "react"
+import Container from '../../components/Container';
 
 /**
- * @export 
+ * @export
  * @component
  * @name Home
- * 
+ *
  * @description
  * Componente responsável por toda
  * a home page.
  */
-export const Home = (): JSX.Element => {
-  return (
-    <div>
-      <h1>Hello World!</h1>
-    </div>
-  )
+export function Home(): JSX.Element {
+  return <Container />;
 }

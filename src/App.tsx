@@ -1,18 +1,20 @@
-import { AppRoutes } from "./Routes"
+import { AppRoutes } from './Routes';
 
 /**
  * @export
  * @component
  * @name App
- * 
+ *
  * @description
  * Responsável pelo componente de App
  * da aplicação.
  */
 function App() {
   return (
-    <AppRoutes />
-  )
+    <div className="bg-dark-blue text-white">
+      <AppRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;
