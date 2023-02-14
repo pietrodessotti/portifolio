@@ -45,7 +45,6 @@ export function ShowCase(): JSX.Element {
           {/* <img src="" alt="" /> */}
 
           {downloadButton}
-          {/* <GradientProps type="Bar" optionalStyled={LARGER_BAR} /> */}
         </div>
       </div>
 

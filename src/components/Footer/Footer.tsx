@@ -1,4 +1,3 @@
-import React from 'react';
 import { SOCIAL_MEDIA, SOCIAL_MEDIA_SMALL } from '../../constants/home';
 import Gradient from '../Gradient';
 

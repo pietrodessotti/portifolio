@@ -1,11 +1,5 @@
-import React from 'react';
+import { listTecnologies } from '../../__MOCKS/Mocks';
 
-import {
-  FULL_BAR,
-  LARGER_BAR,
-  MEDIUM_BAR,
-  SMALL_BAR,
-} from '../../constants/home';
 import Gradient from '../Gradient';
 import ContentTecnologies from './ContentTecnologies';
 
@@ -18,22 +12,7 @@ import ContentTecnologies from './ContentTecnologies';
  * Responsible for render my skills with technologies.
  */
 export function Technologies(): JSX.Element {
-  const listTecnologies = [
-    { tecnologie: 'Html', level: 'Especialista', sizeBar: FULL_BAR },
-    { tecnologie: 'Javascript', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'TypesScript', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'React', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'Redux', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'NextJs', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'CSS & Sass', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'Tailwind', level: 'Avançado', sizeBar: LARGER_BAR },
-    { tecnologie: 'React Native', level: 'Intermediário', sizeBar: MEDIUM_BAR },
-    { tecnologie: 'Wordpress', level: 'Intermediário', sizeBar: MEDIUM_BAR },
-    { tecnologie: 'NodeJs', level: 'Básico', sizeBar: SMALL_BAR },
-    { tecnologie: 'Vue', level: 'Básico', sizeBar: SMALL_BAR },
-    { tecnologie: 'Angular', level: 'Básico', sizeBar: SMALL_BAR },
-  ];
-
+ 
   const othersSkills = [
     'Git',
     'Github',
