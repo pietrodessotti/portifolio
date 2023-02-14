@@ -29,7 +29,6 @@ export function ShowCase(): JSX.Element {
       type="Button"
       text="Baixar curriculo"
       optionalStyled="text-sm"
-      handleClick={() => console.log('baixar curriculo')}
     />
   );
 
