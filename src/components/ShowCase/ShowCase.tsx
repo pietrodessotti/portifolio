@@ -26,6 +26,7 @@ export function ShowCase(): JSX.Element {
 
   const downloadButton = (
     <GradientProps
+      nameButton="baixar-curriculo"
       type="Button"
       text="Baixar curriculo"
       optionalStyled="text-sm"
@@ -56,6 +57,7 @@ export function ShowCase(): JSX.Element {
               text={helloTitle}
               optionalStyled="text-4xl"
             />
+
             <h1 className="text-4xl">desenvolvedor frontend</h1>
           </div>
           <div className="mt-16 absolute right-0 w-2/5">

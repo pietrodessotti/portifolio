@@ -36,8 +36,6 @@ export function Gradient({
       )}
 
       {type === 'Bar' && (
-        // <div className="relative w-full h-3 bg-dark-blue-bar rounded-full">
-        //   </div>
         <div
           className={`absolute ${optionalStyled} ${backgroundGradient} rounded-full`}
         />
@@ -55,18 +53,19 @@ export function Gradient({
         </h1>
       )}
       {type === 'Button' && (
-        <div>
-          <button
-            name={nameButton}
-            type="button"
-            className={`my-6 px-6 py-3 ${
-              optionalStyled || 'text-base'
-            } rounded-full ${backgroundGradient}`}
-            onClick={handleClick}
-          >
-            {text || children}
-          </button>
-        </div>
+
+
+        <button
+          name={nameButton}
+          type="button"
+          className={`relative z-10 my-6 px-6 py-3 ${optionalStyled || 'text-base'
+        } rounded-full ${backgroundGradient}
+        `}
+        onClick={handleClick}
+        >
+          {text || children}
+          {/* <div className={`absolute -inset-1 ${backgroundGradient} rounded-full blur `}  /> */}
+        </button>
       )}
     </>
   );

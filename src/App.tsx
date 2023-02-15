@@ -1,4 +1,8 @@
+import ReactGA from 'react-ga';
 import { AppRoutes } from './Routes';
+
+  const TRACKING_ID = "G-HM63V4GPC6"; // OUR_TRACKING_ID
+  ReactGA.initialize(TRACKING_ID);
 
 /**
  * @export
