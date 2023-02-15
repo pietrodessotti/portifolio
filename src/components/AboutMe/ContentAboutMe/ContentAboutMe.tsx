@@ -19,7 +19,7 @@ export function ContentAboutMe({
       <div className="lg:flex lg:items-center">
         {children}
         {timeLine && (
-          <div className="bg-white m-auto w-1 h-full lg:w-full lg:h-1" />
+          <div className="bg-white m-auto w-0.5 h-full lg:w-full lg:h-0.5" />
         )}
       </div>
       <p className="mb-6 w-2/5 text-sm text-gray lg:mt-6 lg:w-4/5">{text}</p>
