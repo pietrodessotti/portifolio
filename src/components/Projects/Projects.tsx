@@ -10,18 +10,6 @@ import Gradient from '../Gradient';
  * Responsible for render all projects.
  */
 export function Projects(): JSX.Element {
-  // const [projects, setProjects] = useState(null);
-  // const getProjects = async () => {
-  //   const API = 'https://api.github.com/users/PietroDessotti/repos';
-  //   await fetch(API)
-  //     .then((response) => response.json())
-  //     .then((data) => setProjects(data));
-  // };
-
-  // useEffect(() => {
-  //   getProjects();
-  // }, []);
-
   return (
     <div id="projects" className="mt-3 max-w-xs m-auto lg:max-w-3xl">
       <h1 className="my-3 pb-6 text-lg font-bold lg:text-2xl">Projetos</h1>
@@ -32,7 +20,7 @@ export function Projects(): JSX.Element {
             width="100%"
             height="100%"
               className="py-6 text-left m-auto my-6 h-48"
-              src={`${window.location.origin} + /${item.img}`}
+              src={`/images${item.img}`}
               alt={item.name}
             />
             <h1 className="pb-3 text-base font-bold">{item.name}</h1>
