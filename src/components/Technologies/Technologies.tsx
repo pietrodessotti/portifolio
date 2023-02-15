@@ -23,7 +23,7 @@ export function Technologies(): JSX.Element {
     <div id="technologies" className="mt-12 max-w-xs m-auto lg:max-w-3xl">
       <h1 className="my-3 pb-6 text-lg font-bold lg:text-2xl">Tecnologias</h1>
       {listTecnologies.map((skill) => (
-        <div className="pb-6">
+        <div key={skill.id} className="pb-6">
           <ContentTecnologies tecnologie={skill.tecnologie} level={skill.level}>
             <Gradient type="Bar" optionalStyled={skill.sizeBar} />
           </ContentTecnologies>
@@ -37,7 +37,7 @@ export function Technologies(): JSX.Element {
         <div>
           <ul className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:w-4/5">
             {othersSkills.map((item) => (
-              <li className="py-2 gap-2 flex items-center lg:text-base">
+              <li key={`${item}-id`} className="py-2 gap-2 flex items-center lg:text-base">
                 <Gradient />
                 {item}
               </li>
