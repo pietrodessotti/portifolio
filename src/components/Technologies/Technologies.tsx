@@ -12,7 +12,6 @@ import ContentTecnologies from './ContentTecnologies';
  * Responsible for render my skills with technologies.
  */
 export function Technologies(): JSX.Element {
- 
   const othersSkills = [
     'Git',
     'Github',

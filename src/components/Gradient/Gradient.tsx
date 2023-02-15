@@ -57,7 +57,7 @@ export function Gradient({
       {type === 'Button' && (
         <div>
           <button
-          name={nameButton}
+            name={nameButton}
             type="button"
             className={`my-6 px-6 py-3 ${
               optionalStyled || 'text-base'

@@ -22,7 +22,6 @@ export function Projects(): JSX.Element {
   //   getProjects();
   // }, []);
 
- 
   return (
     <div id="projects" className="mt-3 max-w-xs m-auto lg:max-w-3xl">
       <h1 className="my-3 pb-6 text-lg font-bold lg:text-2xl">Projetos</h1>
@@ -38,8 +37,8 @@ export function Projects(): JSX.Element {
             <p className="pb-3 text-sm text-gray">{item.description}</p>
 
             <div className="flex items-center justify-between">
-              <Gradient type="Button" nameButton={`${item.name  }-button`}>
-                <a 
+              <Gradient type="Button" nameButton={`${item.name}-button`}>
+                <a
                   id={`${item.name}-project-netlify`}
                   href={item.linkView}
                   target="_blank"
@@ -55,7 +54,6 @@ export function Projects(): JSX.Element {
                 href={item.linkGithub}
                 target="_blank"
                 rel="noopener noreferrer"
-                
               >
                 Github
               </a>
