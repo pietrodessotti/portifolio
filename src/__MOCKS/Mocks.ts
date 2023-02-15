@@ -5,7 +5,7 @@ export const arrProjects = [
     name: 'Churrascometro',
     description:
       'Cansado de fazer churrasco e não saber quanta carne / refrigerante comprar, criei um sistema para calcular quanto comprar por quantidade de pessoas e tempo de duração.',
-    img: '../../public/images/churrascometro-project.png',
+    img: '/churrascometro-project.png',
     linkView: 'https://gallant-kalam-1522a2.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/churrascometro',
   },
@@ -13,7 +13,7 @@ export const arrProjects = [
     name: 'Crypto Change',
     description:
       'Sistema para listar criptomoedas com valor atualizado com variação de valor na última hora, dia e semana e simulação de compra e venda com moedas de todos os países.',
-    img: '../../public/images/crypto-change-project.png',
+    img: '/crypto-change-project.png',
     linkView: 'https://mycryptochange.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/CryptoChange',
   },
@@ -21,7 +21,7 @@ export const arrProjects = [
     name: 'Página de captura',
     description:
       'Página de captura fictícia com integração ao mailChimp, totalmente funcional.',
-    img: '../../public/images/capture-page-project.png',
+    img: '/capture-page-project.png',
     linkView: 'https://elated-pasteur-66e249.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/pagCaptura',
   },
@@ -29,7 +29,7 @@ export const arrProjects = [
     name: 'Clone Netflix',
     description:
       'Clone da plataforma netflix responsíva e desenvolvido com React.',
-    img: '../../public/images/clone-netflix-project.png',
+    img: '/clone-netflix-project.png',
     linkView: 'https://ecstatic-panini-b088bb.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/CloneNetflix',
   },
@@ -37,14 +37,14 @@ export const arrProjects = [
     name: 'Styled Components',
     description:
       'Projeto para fins de estudos da biblioteca Styled Components, com alteração de thema, claro e escuro',
-    img: '../../public/images/styled-components-project.png',
+    img: '/styled-components-project.png',
     linkView: 'https://quizzical-fermat-59ab42.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/StyledComponents',
   },
   {
     name: 'Frypih',
     description: 'Sistema para controle de gastos entrada e saída.',
-    img: '../../public/images/fripyh-project.png',
+    img: '/fripyh-project.png',
     linkView: 'https://pietrodessotti.github.io/Fripyh/',
     linkGithub: 'https://github.com/pietrodessotti/Fripyh',
   },
@@ -52,7 +52,7 @@ export const arrProjects = [
     name: 'Foodfy',
     description:
       'Site de receitas desenvolvido durante o curso LaunchBase da rocketseat.',
-    img: '../../public/images/foodfy-project.png',
+    img: '/foodfy-project.png',
     linkView: 'https://pietrodessotti.github.io/Foodfy/',
     linkGithub: 'https://github.com/pietrodessotti/Foodfy',
   },

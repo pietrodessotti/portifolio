@@ -32,7 +32,7 @@ export function Projects(): JSX.Element {
             width="100%"
             height="100%"
               className="py-6 text-left m-auto my-6 h-48"
-              src={item.img}
+              src={`${window.location.origin} + /${item.img}`}
               alt={item.name}
             />
             <h1 className="pb-3 text-base font-bold">{item.name}</h1>
