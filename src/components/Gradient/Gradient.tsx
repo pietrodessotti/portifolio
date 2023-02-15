@@ -11,6 +11,15 @@ type GradientProps = {
   nameButton?: string;
 };
 
+/**
+ * @export
+ * @component
+ * @name Gradient
+ *
+ * @description
+ * Responsible for create one element with gradient,
+ * could it be Circle, Bar Arrow, Title or Button.
+ */
 export function Gradient({
   type = 'Circle',
   text,

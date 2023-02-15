@@ -12,8 +12,6 @@ import ContentAboutMe from './ContentAboutMe';
  * Responsible for render section of about me.
  */
 export function AboutMe(): JSX.Element {
-  
-  
   return (
     <div id="aboutMe" className="pt-12 my-3 max-w-xs m-auto lg:max-w-3xl">
       <h1 className="pb-6 text-lg font-bold lg:text-2xl">Carreira</h1>

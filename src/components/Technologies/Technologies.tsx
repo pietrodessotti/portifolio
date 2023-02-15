@@ -1,7 +1,7 @@
 import { listTecnologies } from '../../__MOCKS/Mocks';
 
 import Gradient from '../Gradient';
-import ContentTecnologies from './ContentTecnologies';
+import ContentTecnologie from './ContentTecnologie';
 
 /**
  * @export
@@ -24,9 +24,9 @@ export function Technologies(): JSX.Element {
       <h1 className="my-3 pb-6 text-lg font-bold lg:text-2xl">Tecnologias</h1>
       {listTecnologies.map((skill) => (
         <div key={skill.id} className="pb-6">
-          <ContentTecnologies tecnologie={skill.tecnologie} level={skill.level}>
+          <ContentTecnologie tecnologie={skill.tecnologie} level={skill.level}>
             <Gradient type="Bar" optionalStyled={skill.sizeBar} />
-          </ContentTecnologies>
+          </ContentTecnologie>
         </div>
       ))}
       <section>

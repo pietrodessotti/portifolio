@@ -7,7 +7,7 @@ import Gradient from '../Gradient';
  * @name Footer
  *
  * @description
- * Component responsible for my contacts.
+ * Component responsible for footer of screen.
  */
 export function Footer(): JSX.Element {
   const contactMe = (

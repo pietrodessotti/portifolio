@@ -4,6 +4,14 @@ type Props = {
   color: string;
 };
 
+/**
+ * @export 
+ * @component
+ * @name WhatsApp
+ * 
+ * @description
+ * Component of type svg WhatsApp.
+ */
 export function WhatsApp({ width = 15, height = 15, color = 'white' }: Props) {
   return (
     <svg

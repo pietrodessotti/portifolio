@@ -4,6 +4,14 @@ type Props = {
   color: string;
 };
 
+/**
+ * @export 
+ * @component
+ * @name Linkedin
+ * 
+ * @description
+ * Component of type svg Linkedin.
+ */
 export function Linkedin({ width = 15, height = 15, color = 'white' }: Props) {
   return (
     <svg

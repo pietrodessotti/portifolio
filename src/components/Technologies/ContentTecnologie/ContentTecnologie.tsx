@@ -1,16 +1,23 @@
-import React from 'react';
-
-type ContentTecnologiesProps = {
+type ContentTecnologieProps = {
   tecnologie: string;
   level: string;
   children: JSX.Element;
 };
 
-export function ContentTecnologies({
+/**
+ * @export 
+ * @component
+ * @name ContentTecnologie
+ * 
+ * @description
+ * Component responsible for generate one
+ * tecnologie.
+ */
+export function ContentTecnologie({
   tecnologie,
   level,
   children,
-}: ContentTecnologiesProps): JSX.Element {
+}: ContentTecnologieProps): JSX.Element {
   return (
     <div>
       <div className="flex justify-between text-sm">

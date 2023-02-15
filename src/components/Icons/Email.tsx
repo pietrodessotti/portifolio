@@ -4,6 +4,14 @@ type Props = {
   color: string;
 };
 
+/**
+ * @export 
+ * @component
+ * @name Email
+ * 
+ * @description
+ * Component of type svg Email.
+ */
 export function Email({ width = 15, height = 15, color = 'white' }: Props) {
   return (
     <svg

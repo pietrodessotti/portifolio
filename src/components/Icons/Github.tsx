@@ -4,6 +4,14 @@ type Props = {
   color: string;
 };
 
+/**
+ * @export 
+ * @component
+ * @name Github
+ * 
+ * @description
+ * Component of type svg Github.
+ */
 export function Github({ width = 15, height = 15, color = 'white' }: Props) {
   return (
     <svg

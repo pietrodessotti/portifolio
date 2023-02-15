@@ -7,6 +7,15 @@ type ContentAboutMeProps = {
   timeLine: boolean;
 };
 
+/**
+ * @export 
+ * @component
+ * @name ContentAboutMe
+ * 
+ * @description
+ * Responsible for component of render content
+ * about me with time line.
+ */
 export function ContentAboutMe({
   year,
   text,
