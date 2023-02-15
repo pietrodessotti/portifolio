@@ -70,6 +70,7 @@ export const listTecnologies = [
   { tecnologie: 'React Native', level: 'Intermediário', sizeBar: MEDIUM_BAR },
   { tecnologie: 'Wordpress', level: 'Intermediário', sizeBar: MEDIUM_BAR },
   { tecnologie: 'NodeJs', level: 'Básico', sizeBar: SMALL_BAR },
+  { tecnologie: 'MongoDB', level: 'Básico', sizeBar: SMALL_BAR },
   { tecnologie: 'Vue', level: 'Básico', sizeBar: SMALL_BAR },
   { tecnologie: 'Angular', level: 'Básico', sizeBar: SMALL_BAR },
 ];
@@ -78,13 +79,16 @@ export const timeLine = [
   {
     year: '2021',
     text: 'Comecei a estagiar na D1 Jornadas Digitais, também estava no sétimo período da faculdade.',
+    line: true
   },
   {
     year: '2022',
     text: 'Me formei em Ciência da Computação, fui efetivado como trainee e 3 meses depois me tornei júnior.',
+    line: true,
   },
   {
     year: '2023',
     text: 'Me aperfeiçoei no front-end usando técnologias como Tailwind e Vue, também aprendi NodeJs e MongoDB.',
+    line: false,
   },
 ];

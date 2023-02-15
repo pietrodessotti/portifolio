@@ -2,7 +2,7 @@
 import React, { ReactElement } from 'react';
 
 type GradientProps = {
-  type?: 'Circle' | 'Bar' | 'Arrow' | 'Title' | 'Button' | 'TimeLine';
+  type?: 'Circle' | 'Bar' | 'Arrow' | 'Title' | 'Button';
   text?: string;
   handleClick?: () => void;
   icon?: ReactElement;
@@ -26,13 +26,6 @@ export function Gradient({
     <>
       {type === 'Circle' && (
         <div className={`w-3 h-3 ${backgroundGradient} rounded-full`} />
-      )}
-
-      {type === 'TimeLine' && (
-        <div className="lg:flex lg:items-center">
-          <div className={`w-3 h-3 ${backgroundGradient} rounded-full`} />
-          <div className="bg-white ml-1 w-1 h-full lg:w-full lg:h-1 lg:ml-0" />
-        </div>
       )}
 
       {type === 'Bar' && (
