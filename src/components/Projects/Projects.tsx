@@ -29,6 +29,8 @@ export function Projects(): JSX.Element {
         {arrProjects?.map((item) => (
           <div className="mb-6 px-6 border border-blue rounded-lg">
             <img
+            width="100%"
+            height="100%"
               className="py-6 text-left m-auto my-6 h-48"
               src={item.img}
               alt={item.name}
