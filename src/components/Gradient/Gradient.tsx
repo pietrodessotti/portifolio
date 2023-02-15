@@ -8,6 +8,7 @@ type GradientProps = {
   icon?: ReactElement;
   optionalStyled?: string;
   children?: JSX.Element;
+  nameButton?: string;
 };
 
 export function Gradient({
@@ -17,6 +18,7 @@ export function Gradient({
   icon,
   optionalStyled,
   children,
+  nameButton,
 }: GradientProps): JSX.Element {
   const backgroundGradient = 'bg-gradient-to-r from-[#a84ccf] to-[#00c2af]';
 
@@ -55,6 +57,7 @@ export function Gradient({
       {type === 'Button' && (
         <div>
           <button
+          name={nameButton}
             type="button"
             className={`my-6 px-6 py-3 ${
               optionalStyled || 'text-base'

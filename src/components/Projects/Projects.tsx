@@ -38,10 +38,9 @@ export function Projects(): JSX.Element {
             <p className="pb-3 text-sm text-gray">{item.description}</p>
 
             <div className="flex items-center justify-between">
-              <Gradient type="Button" optionalStyled="">
-                <a
-                  id={`${item.name}-project`}
-                  aria-hidden
+              <Gradient type="Button" nameButton={`${item.name  }-button`}>
+                <a 
+                  id={`${item.name}-project-netlify`}
                   href={item.linkView}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -52,11 +51,11 @@ export function Projects(): JSX.Element {
 
               <a
                 className="my-6 px-6 py-3 rounded-full border-2 border-inherit"
-                id={`${item.name}-project`}
-                aria-hidden
+                id={`${item.name}-project-github`}
                 href={item.linkGithub}
                 target="_blank"
                 rel="noopener noreferrer"
+                
               >
                 Github
               </a>
