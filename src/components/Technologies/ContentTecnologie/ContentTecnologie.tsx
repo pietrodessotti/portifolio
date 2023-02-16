@@ -18,8 +18,7 @@ export function ContentTecnologie({
   level,
   children,
 }: ContentTecnologieProps): JSX.Element {
-  return (
-    <div>
+  return <div>
       <div className="flex justify-between text-sm">
         <p className="lg:text-base">{tecnologie}</p>
         <p className="text-gray">{level}</p>
@@ -29,5 +28,4 @@ export function ContentTecnologie({
         {children}
       </div>
     </div>
-  );
 }

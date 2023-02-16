@@ -31,11 +31,11 @@ export const calculateDifferenceBetweenDates = (
     : new Date();
 
   // To Calculate the result in milliseconds and then converting into days
-  const Result =
+  const resultConvert =
     Math.round(formatFinalDate.getTime() - formatInitialDate.getTime()) /
     oneDay;
 
-  const calculateMonth = Result > 30 ? Result / 30 : 0;
+  const calculateMonth = resultConvert > 30 ? resultConvert / 30 : 0;
   const calculateYear =
     calculateMonth && calculateMonth > 12 ? calculateMonth / 12 : 0;
 
