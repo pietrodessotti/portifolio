@@ -1,7 +1,5 @@
 import calculateDifferenceBetweenDates from '../../utils/calculateDifferenceBetweenDates';
-
 import GradientProps from '../Gradient';
-import { Github } from '../Icons/Github';
 
 /**
  * @export
@@ -42,9 +40,7 @@ export function ShowCase(): JSX.Element {
           <p className="pt-3 text-gray text-sm">{descriptionShowCase}</p>
         </div>
         <div className="pt-3">
-          <Github width="180px" height="180px" color="white" />
-          {/* <img src="" alt="" /> */}
-
+          <img width="180px" height="180px" className='rounded-full hover:filter ' src="/images/pietro-dessotti.jfif" alt="foto pessoal Pietro Dessotti" />
           {downloadButton}
         </div>
       </div>
@@ -61,9 +57,9 @@ export function ShowCase(): JSX.Element {
             <h1 className="text-4xl">desenvolvedor frontend</h1>
           </div>
           <div className="mt-16 absolute right-0 w-2/5">
-            <Github width="180px" height="180px" color="white" />
+          <img width="180px" height="180px" className='rounded-full hover:filter ' src="/images/pietro-dessotti.jfif" alt="foto pessoal Pietro Dessotti" />
           </div>
-          {/* <img src="" alt="" /> */}
+
         </div>
         <div>
           <p className="pt-3 text-gray w-3/5 text-sm">{descriptionShowCase}</p>
