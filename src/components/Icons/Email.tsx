@@ -5,10 +5,10 @@ type Props = {
 };
 
 /**
- * @export 
+ * @export
  * @component
  * @name Email
- * 
+ *
  * @description
  * Component of type svg Email.
  */

@@ -5,10 +5,10 @@ type Props = {
 };
 
 /**
- * @export 
+ * @export
  * @component
  * @name Github
- * 
+ *
  * @description
  * Component of type svg Github.
  */

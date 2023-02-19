@@ -55,15 +55,14 @@ export function Gradient({
         </h1>
       )}
       {type === 'Button' && (
-
-
         <button
           name={nameButton}
           type="button"
-          className={`relative z-10 my-6 px-6 py-3 ${optionalStyled || 'text-base'
-        } rounded-full ${backgroundGradient}
+          className={`relative z-10 my-6 px-6 py-3 ${
+            optionalStyled || 'text-base'
+          } rounded-full ${backgroundGradient}
         `}
-        onClick={handleClick}
+          onClick={handleClick}
         >
           {text || children}
           {/* <div className={`absolute -inset-1 ${backgroundGradient} rounded-full blur `}  /> */}

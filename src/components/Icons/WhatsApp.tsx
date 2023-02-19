@@ -5,10 +5,10 @@ type Props = {
 };
 
 /**
- * @export 
+ * @export
  * @component
  * @name WhatsApp
- * 
+ *
  * @description
  * Component of type svg WhatsApp.
  */

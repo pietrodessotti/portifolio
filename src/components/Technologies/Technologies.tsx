@@ -37,7 +37,10 @@ export function Technologies(): JSX.Element {
         <div>
           <ul className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:w-4/5">
             {othersSkills.map((item) => (
-              <li key={`${item}-id`} className="py-2 gap-2 flex items-center lg:text-base">
+              <li
+                key={`${item}-id`}
+                className="py-2 gap-2 flex items-center lg:text-base"
+              >
                 <Gradient />
                 {item}
               </li>

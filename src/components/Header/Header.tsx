@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { SOCIAL_MEDIA, SOCIAL_MEDIA_SMALL } from '../../constants/home';
+import SocialMedia from '../SocialMedia';
 
 /**
  * @export
@@ -43,7 +44,7 @@ export function Header(): JSX.Element {
     <div className="sticky top-0 z-50 bg-dark-blue">
       <div className={`p-6 ${headerMobileStyled}`}>
         {title}
-        {SOCIAL_MEDIA}
+        {/* <SocialMedia key="" id='' IconName={} link="" size={}  /> */}
       </div>
       <nav className={`px-6 pb-6 ${headerMobileStyled}`}>{itemsMenu}</nav>
       <div className="max-[1023px]:hidden lg:flex max-w-3xl m-auto py-6 mx-auto items-baseline justify-between">

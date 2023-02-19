@@ -8,10 +8,10 @@ type ContentAboutMeProps = {
 };
 
 /**
- * @export 
+ * @export
  * @component
  * @name ContentAboutMe
- * 
+ *
  * @description
  * Responsible for component of render content
  * about me with time line.
