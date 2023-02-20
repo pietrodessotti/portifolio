@@ -40,6 +40,7 @@ export function ShowCase(): JSX.Element {
             src="/images/pietro-dessotti.jfif"
             alt="foto pessoal Pietro Dessotti"
           />
+<div className='flex gap-6'>
 
           <Gradient nameButton="ver-curriculo" type="Button" >
             <a href="https://br.linkedin.com/in/pietro-dessotti">Veja meu curriculo</a>
@@ -53,6 +54,7 @@ export function ShowCase(): JSX.Element {
               >
                 Fale comigo
               </a>
+        </div>
         </div>
       </div>
 

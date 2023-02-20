@@ -52,7 +52,7 @@ export function Gradient({
         <button
           name={nameButton}
           type="button"
-          className={`relative text-sm z-10 my-6 px-6 py-3 opacity-80 hover:opacity-100 duration-300 rounded-full ${backgroundGradient}
+          className={`relative text-sm z-10 my-6 px-6 py-3 rounded-full ${backgroundGradient}
         `}
           onClick={handleClick}
         >
