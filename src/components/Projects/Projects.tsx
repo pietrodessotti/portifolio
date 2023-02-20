@@ -15,10 +15,7 @@ export function Projects(): JSX.Element {
       <h1 className="my-3 pb-6 text-lg font-bold lg:text-2xl">Projetos</h1>
       <div className="lg:grid lg:grid-cols-2 lg:gap-3">
         {arrProjects?.map((item) => (
-          <div
-            key={item.id}
-            className="mb-6 px-6 border border-blue rounded-lg"
-          >
+          <div key={item.id} className="mb-6 px-6 border border-blue rounded-lg">
             <img
               width="100%"
               height="100%"
@@ -30,21 +27,12 @@ export function Projects(): JSX.Element {
             <p className="pb-3 text-sm text-gray">{item.description}</p>
 
             <div className="flex items-center justify-between">
-              <a
-                id={`${item.name}-project-netlify`}
-                href={item.linkView}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Gradient
-                  type="Button"
-                  nameButton={`${item.name}-button`}
-                  text="Ver projeto"
-                />
+              <a id={`${item.name}-project-netlify`} href={item.linkView} target="_blank" rel="noopener noreferrer">
+                <Gradient type="Button" nameButton={`${item.name}-button`} text="Ver projeto" />
               </a>
 
               <a
-                className="my-6 px-6 py-3 rounded-full border-2 border-inherit"
+                className="my-6 px-6 py-3 rounded-full border-2 border-inherit text-sm"
                 id={`${item.name}-project-github`}
                 href={item.linkGithub}
                 target="_blank"

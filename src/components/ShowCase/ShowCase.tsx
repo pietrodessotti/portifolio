@@ -1,5 +1,5 @@
 import calculateDifferenceBetweenDates from '../../utils/calculateDifferenceBetweenDates';
-import GradientProps from '../Gradient';
+import Gradient from '../Gradient';
 
 /**
  * @export
@@ -22,20 +22,11 @@ export function ShowCase(): JSX.Element {
   ${timeExperience}, sempre trabalhando com padrões de qualidade de
   código e as melhores ferramentas do mercado.`;
 
-  const downloadButton = (
-    <GradientProps
-      nameButton="baixar-curriculo"
-      type="Button"
-      text="Baixar curriculo"
-      optionalStyled="text-sm"
-    />
-  );
-
   return (
     <>
       <div className="mt-3 max-w-xs m-auto lg:hidden text-left">
         <div>
-          <GradientProps type="Title" text={helloTitle} />
+          <Gradient type="Title" text={helloTitle} />
           <h1 className="text-2xl">desenvolvedor frontend</h1>
           <p className="pt-3 text-gray text-sm">{descriptionShowCase}</p>
         </div>
@@ -57,18 +48,16 @@ export function ShowCase(): JSX.Element {
           />
           {/* <div className='ml-24 w-36 h-36 border-[1px] border border-b-[#a84ccf] border-t-[#00c2af] border-l-[#00c2af] border-r-[#a84ccf] blur-[3px] rounded-full' /> */}
 
-          {downloadButton}
+          <Gradient nameButton="ver-curriculo" type="Button" >
+            <a href="https://br.linkedin.com/in/pietro-dessotti">Veja meu curriculo</a>
+          </Gradient>
         </div>
       </div>
 
       <div className="max-[1023px]:hidden lg max-w-3xl m-auto pt-12 pb-6 mx-auto">
         <div className="flex items-center justify-between">
           <div className="z-10 mt-16 relative w-3/5">
-            <GradientProps
-              type="Title"
-              text={helloTitle}
-              optionalStyled="text-4xl"
-            />
+            <Gradient type="Title" text={helloTitle} optionalStyled="text-4xl" />
 
             <h1 className="z-10 text-4xl">desenvolvedor frontend</h1>
           </div>
@@ -82,16 +71,18 @@ export function ShowCase(): JSX.Element {
             />
           </div>
 
-          <div className="mt-72 mr-48 absolute right-0 w-2/5 h-96">
+          {/* <div className="mt-72 mr-48 absolute right-0 w-2/5 h-96">
             <div className="rounded-full w-72 h-72 bg-gradient-to-r from-[#a84ccf] to-[#00c2af] p-[1px] ">
               <div className="h-full w-full bg-dark-blue rounded-full" />
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="block z-10">
           <p className="pt-3 text-gray w-3/5 text-sm">{descriptionShowCase}</p>
 
-          {downloadButton}
+          <Gradient nameButton="ver-curriculo" type="Button" >
+            <a href="https://br.linkedin.com/in/pietro-dessotti">Veja meu curriculo</a>
+          </Gradient>
         </div>
       </div>
     </>

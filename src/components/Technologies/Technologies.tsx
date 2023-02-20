@@ -12,12 +12,7 @@ import ContentTecnologie from './ContentTecnologie';
  * Responsible for render my skills with technologies.
  */
 export function Technologies(): JSX.Element {
-  const othersSkills = [
-    'Git',
-    'Github',
-    'Trabalho em equipe',
-    'Metodologias ágeis',
-  ];
+  const othersSkills = ['Git', 'Github', 'Trabalho em equipe', 'Metodologias ágeis'];
 
   return (
     <div id="technologies" className="mt-12 max-w-xs m-auto lg:max-w-3xl">
@@ -30,17 +25,12 @@ export function Technologies(): JSX.Element {
         </div>
       ))}
       <section>
-        <h1 className="pt-12 pb-6 font-bold lg:text-2xl">
-          Outras Tecnologias e Habilidades
-        </h1>
+        <h1 className="pt-12 pb-6 font-bold lg:text-2xl">Outras Tecnologias e Habilidades</h1>
 
         <div>
           <ul className="grid grid-cols-2 lg:grid lg:grid-cols-3 lg:w-4/5">
             {othersSkills.map((item) => (
-              <li
-                key={`${item}-id`}
-                className="py-2 gap-2 flex items-center lg:text-base"
-              >
+              <li key={`${item}-id`} className="py-2 gap-2 flex items-center lg:text-base">
                 <Gradient />
                 {item}
               </li>

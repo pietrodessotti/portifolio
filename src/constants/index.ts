@@ -1,15 +1,6 @@
-import {
-  SOCIAL_MEDIA,
-  SOCIAL_MEDIA_SMALL,
-  SMALL_BAR,
-  MEDIUM_BAR,
-  LARGER_BAR,
-  FULL_BAR,
-} from './home';
+import { SMALL_BAR, MEDIUM_BAR, LARGER_BAR, FULL_BAR } from './home';
 
 export default {
-  SOCIAL_MEDIA,
-  SOCIAL_MEDIA_SMALL,
   SMALL_BAR,
   MEDIUM_BAR,
   LARGER_BAR,

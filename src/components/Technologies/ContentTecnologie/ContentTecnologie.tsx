@@ -13,11 +13,7 @@ type ContentTecnologieProps = {
  * Component responsible for generate one
  * tecnologie.
  */
-export function ContentTecnologie({
-  tecnologie,
-  level,
-  children,
-}: ContentTecnologieProps): JSX.Element {
+export function ContentTecnologie({ tecnologie, level, children }: ContentTecnologieProps): JSX.Element {
   return (
     <div>
       <div className="flex justify-between text-sm">
@@ -25,9 +21,7 @@ export function ContentTecnologie({
         <p className="text-gray">{level}</p>
       </div>
 
-      <div className="my-2 relative w-full h-3 bg-dark-blue-bar rounded-full">
-        {children}
-      </div>
+      <div className="my-2 relative w-full h-3 bg-dark-blue-bar rounded-full">{children}</div>
     </div>
   );
 }

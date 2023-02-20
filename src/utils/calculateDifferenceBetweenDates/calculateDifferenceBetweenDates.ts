@@ -21,31 +21,19 @@ export const calculateDifferenceBetweenDates = (
   // One day Time in ms (milliseconds)
   const oneDay = 1000 * 60 * 60 * 24;
 
-  const formatInitialDate = new Date(
-    initialDate.year,
-    initialDate.month - 1,
-    initialDate.day
-  );
-  const formatFinalDate = finalDate
-    ? new Date(finalDate.year, finalDate.month, finalDate.day)
-    : new Date();
+  const formatInitialDate = new Date(initialDate.year, initialDate.month - 1, initialDate.day);
+  const formatFinalDate = finalDate ? new Date(finalDate.year, finalDate.month, finalDate.day) : new Date();
 
   // To Calculate the result in milliseconds and then converting into days
-  const resultConvert =
-    Math.round(formatFinalDate.getTime() - formatInitialDate.getTime()) /
-    oneDay;
+  const resultConvert = Math.round(formatFinalDate.getTime() - formatInitialDate.getTime()) / oneDay;
 
   const calculateMonth = resultConvert > 30 ? resultConvert / 30 : 0;
-  const calculateYear =
-    calculateMonth && calculateMonth > 12 ? calculateMonth / 12 : 0;
+  const calculateYear = calculateMonth && calculateMonth > 12 ? calculateMonth / 12 : 0;
 
   const floorYear = Math.floor(calculateYear);
   const floorMonth = Math.floor(calculateMonth);
   const separateDecimalNumber = calculateYear.toFixed(1).toString().split('.');
-  const roundYear =
-    separateDecimalNumber.length < 5
-      ? Math.round(calculateYear + 1)
-      : Math.round(calculateYear);
+  const roundYear = separateDecimalNumber.length < 5 ? Math.round(calculateYear + 1) : Math.round(calculateYear);
 
   const restMonths = Math.floor(floorMonth - floorYear * 12);
 
@@ -58,10 +46,7 @@ export const calculateDifferenceBetweenDates = (
   }
 
   if (restMonths) {
-    result +=
-      (floorYear ? ' e ' : '') +
-      restMonths +
-      (restMonths === 1 ? ' Mês' : ' Meses');
+    result += (floorYear ? ' e ' : '') + restMonths + (restMonths === 1 ? ' Mês' : ' Meses');
   }
 
   return result;

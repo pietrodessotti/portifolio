@@ -21,8 +21,7 @@ export const arrProjects = [
   },
   {
     name: 'Página de captura',
-    description:
-      'Página de captura fictícia com integração ao mailChimp, totalmente funcional.',
+    description: 'Página de captura fictícia com integração ao mailChimp, totalmente funcional.',
     img: '/capture-page-project.png',
     linkView: 'https://elated-pasteur-66e249.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/pagCaptura',
@@ -30,8 +29,7 @@ export const arrProjects = [
   },
   {
     name: 'Clone Netflix',
-    description:
-      'Clone da plataforma netflix responsíva e desenvolvido com React.',
+    description: 'Clone da plataforma netflix responsíva e desenvolvido com React.',
     img: '/clone-netflix-project.png',
     linkView: 'https://ecstatic-panini-b088bb.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/CloneNetflix',
@@ -39,8 +37,7 @@ export const arrProjects = [
   },
   {
     name: 'Styled Components',
-    description:
-      'Projeto para fins de estudos da biblioteca Styled Components, com alteração de thema, claro e escuro',
+    description: 'Projeto para fins de estudos da biblioteca Styled Components, com alteração de thema, claro e escuro',
     img: '/styled-components-project.png',
     linkView: 'https://quizzical-fermat-59ab42.netlify.app/',
     linkGithub: 'https://github.com/pietrodessotti/StyledComponents',
@@ -56,12 +53,20 @@ export const arrProjects = [
   },
   {
     name: 'Foodfy',
-    description:
-      'Site de receitas desenvolvido durante o curso LaunchBase da rocketseat.',
+    description: 'Site de receitas desenvolvido durante o curso LaunchBase da rocketseat.',
     img: '/foodfy-project.png',
     linkView: 'https://pietrodessotti.github.io/Foodfy/',
     linkGithub: 'https://github.com/pietrodessotti/Foodfy',
     id: 7,
+  },
+  {
+    name: 'Portifolio',
+    description:
+      'Meu site portifolio, esse mesmo que você está vendo, desenvolvido com React, Typescript e Tailwind utilizando o conceito de mobile first.',
+    img: '/portifolio-project.png',
+    linkView: '#',
+    linkGithub: 'https://github.com/pietrodessotti/portifolio',
+    id: 8,
   },
 ];
 
