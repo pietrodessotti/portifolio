@@ -1,3 +1,4 @@
+import { DEFAULT_BUTTON_STYLED } from '../../constants/home';
 import calculateDifferenceBetweenDates from '../../utils/calculateDifferenceBetweenDates';
 import Gradient from '../Gradient';
 
@@ -31,13 +32,6 @@ export function ShowCase(): JSX.Element {
           <p className="pt-3 text-gray text-sm">{descriptionShowCase}</p>
         </div>
 
-        {/* <div className="z-1 mt-28 absolute left-0 w-2/5">
-            <div className="rounded-full w-60 h-60 bg-gradient-to-r from-[#a84ccf] to-[#00c2af] p-[1px] ">
-              <div className="h-full w-full bg-dark-blue rounded-full" />
-            </div>
-          </div> */}
-
-        {/* <div className='absolute mt-36 w-60 h-60 border-[1px] border border-b-[#a84ccf] border-t-[#00c2af] border-l-[#00c2af] border-r-[#a84ccf] blur-[3px] rounded-full' /> */}
         <div className="z-10 pt-3 relative">
           <img
             width="180px"
@@ -46,11 +40,19 @@ export function ShowCase(): JSX.Element {
             src="/images/pietro-dessotti.jfif"
             alt="foto pessoal Pietro Dessotti"
           />
-          {/* <div className='ml-24 w-36 h-36 border-[1px] border border-b-[#a84ccf] border-t-[#00c2af] border-l-[#00c2af] border-r-[#a84ccf] blur-[3px] rounded-full' /> */}
 
           <Gradient nameButton="ver-curriculo" type="Button" >
             <a href="https://br.linkedin.com/in/pietro-dessotti">Veja meu curriculo</a>
           </Gradient>
+
+          <a
+                className={DEFAULT_BUTTON_STYLED}                id="fale-comigo-mobile"
+                href="https://api.whatsapp.com/send/?phone=5511934415834&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+seu+site%2C+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fale comigo
+              </a>
         </div>
       </div>
 
@@ -71,18 +73,26 @@ export function ShowCase(): JSX.Element {
             />
           </div>
 
-          {/* <div className="mt-72 mr-48 absolute right-0 w-2/5 h-96">
-            <div className="rounded-full w-72 h-72 bg-gradient-to-r from-[#a84ccf] to-[#00c2af] p-[1px] ">
-              <div className="h-full w-full bg-dark-blue rounded-full" />
-            </div>
-          </div> */}
         </div>
         <div className="block z-10">
           <p className="pt-3 text-gray w-3/5 text-sm">{descriptionShowCase}</p>
 
+
+<div className='flex gap-6'>
+
           <Gradient nameButton="ver-curriculo" type="Button" >
             <a href="https://br.linkedin.com/in/pietro-dessotti">Veja meu curriculo</a>
           </Gradient>
+
+              <a
+                className={DEFAULT_BUTTON_STYLED}                id="fale-comigo-desktop"
+                href="https://api.whatsapp.com/send/?phone=5511934415834&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+seu+site%2C+gostaria+de+saber+mais+sobre+seus+servi%C3%A7os.&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                Fale comigo
+              </a>
+                </div>
         </div>
       </div>
     </>

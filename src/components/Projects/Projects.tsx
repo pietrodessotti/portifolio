@@ -1,5 +1,7 @@
 import { arrProjects } from '../../__MOCKS/Mocks';
 import Gradient from '../Gradient';
+import { DEFAULT_BUTTON_STYLED } from '../../constants/home';
+
 
 /**
  * @export
@@ -32,7 +34,7 @@ export function Projects(): JSX.Element {
               </a>
 
               <a
-                className="my-6 px-6 py-3 rounded-full border-2 border-inherit text-sm"
+                className={DEFAULT_BUTTON_STYLED}
                 id={`${item.name}-project-github`}
                 href={item.linkGithub}
                 target="_blank"
